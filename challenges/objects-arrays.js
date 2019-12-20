@@ -141,8 +141,7 @@ each string following this pattern: "jackal, asiatic". Log the resut.
 
 */
 
-const lowCaseAnimalNames = zooAnimals.map(name => name.animal_name);
-// lowCaseAnimalNames = lowCaseAnimalNames.toLowerCase();
+const lowCaseAnimalNames = zooAnimals.map(name => name.animal_name[0].toLowerCase() + name.animal_name.slice(1));
 console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter()
